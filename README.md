@@ -1,7 +1,7 @@
 # test coverage for  [grunt-contrib-watch (v1.0.0)](https://github.com/gruntjs/grunt-contrib-watch)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-contrib-watch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-contrib-watch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-contrib-watch.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-contrib-watch)
 #### Run predefined tasks whenever watched file patterns are added, changed or deleted
 
-[![NPM](https://nodei.co/npm/grunt-contrib-watch.png?downloads=true)](https://www.npmjs.com/package/grunt-contrib-watch)
+[![NPM](https://nodei.co/npm/grunt-contrib-watch.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-contrib-watch)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-grunt-contrib-watch/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,11 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-contrib-watch/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/coverage.html/index.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/screenCapture.buildCi.browser.coverage.example.html.png)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-grunt-contrib-watch%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/test-report.html)
+[![test-report](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/screenCapture.buildCi.browser.test-report.html.png)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/test-report.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-watch/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-grunt-contrib-watch%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-watch/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-watch/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-watch/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/screenCapture.npmPackageListing.svg)
 
@@ -139,33 +139,26 @@
     "main": "tasks/watch.js",
     "maintainers": [
         {
-            "name": "tkellen",
-            "email": "tyler@sleekcode.net"
+            "name": "tkellen"
         },
         {
-            "name": "cowboy",
-            "email": "cowboy@rj3.net"
+            "name": "cowboy"
         },
         {
-            "name": "shama",
-            "email": "kyle@dontkry.com"
+            "name": "shama"
         },
         {
-            "name": "vladikoff",
-            "email": "vlad@vladikoff.com"
+            "name": "vladikoff"
         },
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         },
         {
-            "name": "jmeas",
-            "email": "jellyes2@gmail.com"
+            "name": "jmeas"
         }
     ],
     "name": "grunt-contrib-watch",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gruntjs/grunt-contrib-watch.git"
