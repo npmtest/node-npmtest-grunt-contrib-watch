@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-grunt-contrib-watch/grunt-contrib-watch/tasks/watch.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-grunt-contrib-watch/node_modules/grunt-contrib-watch/tasks/watch.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-grunt-contrib-watch">npmtest-grunt-contrib-watch (v0.0.2)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-grunt-contrib-watch/grunt-contrib-watch/tasks/watch.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-grunt-contrib-watch/node_modules/grunt-contrib-watch/tasks/watch.js</span></h1>
     <h2>
         
         Statements: <span class="metric">8.54% <small>(7 / 82)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-grunt-contrib-watch/grunt-contrib-watch/tasks/</a> &#187; watch.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-grunt-contrib-watch/node_modules/grunt-contrib-watch/tasks/</a> » watch.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -615,13 +613,13 @@ var waiting = 'Waiting...';
 var changedFiles = Object.create(null);
 var watchers = [];
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >function(grunt) {</span>
+module.exports = <span class="fstat-no" title="function not covered">function(grunt) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var taskrun = require('./lib/taskrunner')(grunt);</span>
+<span class="cstat-no" title="statement not covered">  var taskrun = require('./lib/taskrunner')(grunt);</span>
 &nbsp;
   // Default date format logged
-<span class="cstat-no" title="statement not covered" >  var dateFormat = <span class="fstat-no" title="function not covered" >function(time) {</span></span>
-<span class="cstat-no" title="statement not covered" >    grunt.log.writeln(String(</span>
+<span class="cstat-no" title="statement not covered">  var dateFormat = <span class="fstat-no" title="function not covered">function(time) {</span></span>
+<span class="cstat-no" title="statement not covered">    grunt.log.writeln(String(</span>
       'Completed in ' +
       time.toFixed(3) +
       's at ' +
@@ -630,159 +628,159 @@ module.exports = <span class="fstat-no" title="function not covered" >function(g
   };
 &nbsp;
   // When task runner has started
-<span class="cstat-no" title="statement not covered" >  taskrun.on('start', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >    Object.keys(changedFiles).forEach(<span class="fstat-no" title="function not covered" >function(filepath) {</span></span>
+<span class="cstat-no" title="statement not covered">  taskrun.on('start', <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">    Object.keys(changedFiles).forEach(<span class="fstat-no" title="function not covered">function(filepath) {</span></span>
       // Log which file has changed, and how.
-<span class="cstat-no" title="statement not covered" >      grunt.log.ok('File "' + filepath + '" ' + changedFiles[filepath] + '.');</span>
+<span class="cstat-no" title="statement not covered">      grunt.log.ok('File "' + filepath + '" ' + changedFiles[filepath] + '.');</span>
     });
     // Reset changedFiles
-<span class="cstat-no" title="statement not covered" >    changedFiles = Object.create(null);</span>
+<span class="cstat-no" title="statement not covered">    changedFiles = Object.create(null);</span>
   });
 &nbsp;
   // When task runner has ended
-<span class="cstat-no" title="statement not covered" >  taskrun.on('end', <span class="fstat-no" title="function not covered" >function(time) {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (time &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >      dateFormat(time);</span>
+<span class="cstat-no" title="statement not covered">  taskrun.on('end', <span class="fstat-no" title="function not covered">function(time) {</span></span>
+<span class="cstat-no" title="statement not covered">    if (time &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered">      dateFormat(time);</span>
     }
   });
 &nbsp;
   // When a task run has been interrupted
-<span class="cstat-no" title="statement not covered" >  taskrun.on('interrupt', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >    grunt.log.writeln('').write('Scheduled tasks have been interrupted...'.yellow);</span>
+<span class="cstat-no" title="statement not covered">  taskrun.on('interrupt', <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">    grunt.log.writeln('').write('Scheduled tasks have been interrupted...'.yellow);</span>
   });
 &nbsp;
   // When taskrun is reloaded
-<span class="cstat-no" title="statement not covered" >  taskrun.on('reload', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >    taskrun.clearRequireCache(Object.keys(changedFiles));</span>
-<span class="cstat-no" title="statement not covered" >    grunt.log.writeln('').writeln('Reloading watch config...'.cyan);</span>
+<span class="cstat-no" title="statement not covered">  taskrun.on('reload', <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">    taskrun.clearRequireCache(Object.keys(changedFiles));</span>
+<span class="cstat-no" title="statement not covered">    grunt.log.writeln('').writeln('Reloading watch config...'.cyan);</span>
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  grunt.registerTask('watch', 'Run predefined tasks whenever watched files change.', <span class="fstat-no" title="function not covered" >function(target) {</span></span>
-<span class="cstat-no" title="statement not covered" >    var self = this;</span>
-<span class="cstat-no" title="statement not covered" >    var name = self.name || 'watch';</span>
+<span class="cstat-no" title="statement not covered">  grunt.registerTask('watch', 'Run predefined tasks whenever watched files change.', <span class="fstat-no" title="function not covered">function(target) {</span></span>
+<span class="cstat-no" title="statement not covered">    var self = this;</span>
+<span class="cstat-no" title="statement not covered">    var name = self.name || 'watch';</span>
 &nbsp;
     // Close any previously opened watchers
-<span class="cstat-no" title="statement not covered" >    watchers.forEach(<span class="fstat-no" title="function not covered" >function(watcher) {</span></span>
-<span class="cstat-no" title="statement not covered" >      watcher.close();</span>
+<span class="cstat-no" title="statement not covered">    watchers.forEach(<span class="fstat-no" title="function not covered">function(watcher) {</span></span>
+<span class="cstat-no" title="statement not covered">      watcher.close();</span>
     });
-<span class="cstat-no" title="statement not covered" >    watchers = [];</span>
+<span class="cstat-no" title="statement not covered">    watchers = [];</span>
 &nbsp;
     // Never gonna give you up, never gonna let you down
-<span class="cstat-no" title="statement not covered" >    if (grunt.config([name, 'options', 'forever']) !== false) {</span>
-<span class="cstat-no" title="statement not covered" >      taskrun.forever();</span>
+<span class="cstat-no" title="statement not covered">    if (grunt.config([name, 'options', 'forever']) !== false) {</span>
+<span class="cstat-no" title="statement not covered">      taskrun.forever();</span>
     }
 &nbsp;
     // If a custom dateFormat function
-<span class="cstat-no" title="statement not covered" >    var df = grunt.config([name, 'options', 'dateFormat']);</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof df === 'function') {</span>
-<span class="cstat-no" title="statement not covered" >      dateFormat = df;</span>
+<span class="cstat-no" title="statement not covered">    var df = grunt.config([name, 'options', 'dateFormat']);</span>
+<span class="cstat-no" title="statement not covered">    if (typeof df === 'function') {</span>
+<span class="cstat-no" title="statement not covered">      dateFormat = df;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (taskrun.running === false) {</span>
-<span class="cstat-no" title="statement not covered" >      grunt.log.writeln(waiting);</span>
+<span class="cstat-no" title="statement not covered">    if (taskrun.running === false) {</span>
+<span class="cstat-no" title="statement not covered">      grunt.log.writeln(waiting);</span>
     }
 &nbsp;
     // Initialize taskrun
-<span class="cstat-no" title="statement not covered" >    var targets = taskrun.init(name, {target: target});</span>
+<span class="cstat-no" title="statement not covered">    var targets = taskrun.init(name, {target: target});</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    targets.forEach(<span class="fstat-no" title="function not covered" >function(target) {</span></span>
-<span class="cstat-no" title="statement not covered" >      if (typeof target.files === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >        target.files = [target.files];</span>
+<span class="cstat-no" title="statement not covered">    targets.forEach(<span class="fstat-no" title="function not covered">function(target) {</span></span>
+<span class="cstat-no" title="statement not covered">      if (typeof target.files === 'string') {</span>
+<span class="cstat-no" title="statement not covered">        target.files = [target.files];</span>
       }
 &nbsp;
       // Process into raw patterns
-<span class="cstat-no" title="statement not covered" >      var patterns = _.chain(target.files).flatten().map(<span class="fstat-no" title="function not covered" >function(pattern) {</span></span>
-<span class="cstat-no" title="statement not covered" >        return grunt.config.process(pattern);</span>
+<span class="cstat-no" title="statement not covered">      var patterns = _.chain(target.files).flatten().map(<span class="fstat-no" title="function not covered">function(pattern) {</span></span>
+<span class="cstat-no" title="statement not covered">        return grunt.config.process(pattern);</span>
       }).value();
 &nbsp;
       // Validate the event option
-<span class="cstat-no" title="statement not covered" >      if (typeof target.options.event === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >        target.options.event = [target.options.event];</span>
+<span class="cstat-no" title="statement not covered">      if (typeof target.options.event === 'string') {</span>
+<span class="cstat-no" title="statement not covered">        target.options.event = [target.options.event];</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      var eventCwd = process.cwd();</span>
-<span class="cstat-no" title="statement not covered" >      if (target.options.cwd &amp;&amp; target.options.cwd.event) {</span>
-<span class="cstat-no" title="statement not covered" >        eventCwd = target.options.cwd.event;</span>
+<span class="cstat-no" title="statement not covered">      var eventCwd = process.cwd();</span>
+<span class="cstat-no" title="statement not covered">      if (target.options.cwd &amp;&amp; target.options.cwd.event) {</span>
+<span class="cstat-no" title="statement not covered">        eventCwd = target.options.cwd.event;</span>
       }
 &nbsp;
       // Set cwd if options.cwd.file is set
-<span class="cstat-no" title="statement not covered" >      if (typeof target.options.cwd !== 'string' &amp;&amp; target.options.cwd.files) {</span>
-<span class="cstat-no" title="statement not covered" >        target.options.cwd = target.options.cwd.files;</span>
+<span class="cstat-no" title="statement not covered">      if (typeof target.options.cwd !== 'string' &amp;&amp; target.options.cwd.files) {</span>
+<span class="cstat-no" title="statement not covered">        target.options.cwd = target.options.cwd.files;</span>
       }
 &nbsp;
       // Create watcher per target
-<span class="cstat-no" title="statement not covered" >      watchers.push(new Gaze(patterns, target.options, <span class="fstat-no" title="function not covered" >function(err) {</span></span>
-<span class="cstat-no" title="statement not covered" >        if (err) {</span>
-<span class="cstat-no" title="statement not covered" >          if (typeof err === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >            err = new Error(err);</span>
+<span class="cstat-no" title="statement not covered">      watchers.push(new Gaze(patterns, target.options, <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">        if (err) {</span>
+<span class="cstat-no" title="statement not covered">          if (typeof err === 'string') {</span>
+<span class="cstat-no" title="statement not covered">            err = new Error(err);</span>
           }
-<span class="cstat-no" title="statement not covered" >          grunt.log.writeln('ERROR'.red);</span>
-<span class="cstat-no" title="statement not covered" >          grunt.fatal(err);</span>
-<span class="cstat-no" title="statement not covered" >          return taskrun.done();</span>
+<span class="cstat-no" title="statement not covered">          grunt.log.writeln('ERROR'.red);</span>
+<span class="cstat-no" title="statement not covered">          grunt.fatal(err);</span>
+<span class="cstat-no" title="statement not covered">          return taskrun.done();</span>
         }
 &nbsp;
         // Log all watched files with --verbose set
-<span class="cstat-no" title="statement not covered" >        if (grunt.option('verbose')) {</span>
-<span class="cstat-no" title="statement not covered" >          var watched = this.watched();</span>
-<span class="cstat-no" title="statement not covered" >          Object.keys(watched).forEach(<span class="fstat-no" title="function not covered" >function(watchedDir) {</span></span>
-<span class="cstat-no" title="statement not covered" >            watched[watchedDir].forEach(<span class="fstat-no" title="function not covered" >function(watchedFile) {</span></span>
-<span class="cstat-no" title="statement not covered" >              grunt.log.writeln('Watching ' + path.relative(process.cwd(), watchedFile) + ' for changes.');</span>
+<span class="cstat-no" title="statement not covered">        if (grunt.option('verbose')) {</span>
+<span class="cstat-no" title="statement not covered">          var watched = this.watched();</span>
+<span class="cstat-no" title="statement not covered">          Object.keys(watched).forEach(<span class="fstat-no" title="function not covered">function(watchedDir) {</span></span>
+<span class="cstat-no" title="statement not covered">            watched[watchedDir].forEach(<span class="fstat-no" title="function not covered">function(watchedFile) {</span></span>
+<span class="cstat-no" title="statement not covered">              grunt.log.writeln('Watching ' + path.relative(process.cwd(), watchedFile) + ' for changes.');</span>
             });
           });
         }
 &nbsp;
         // On changed/added/deleted
-<span class="cstat-no" title="statement not covered" >        this.on('all', <span class="fstat-no" title="function not covered" >function(status, filepath) {</span></span>
+<span class="cstat-no" title="statement not covered">        this.on('all', <span class="fstat-no" title="function not covered">function(status, filepath) {</span></span>
 &nbsp;
           // Skip events not specified
-<span class="cstat-no" title="statement not covered" >          if (!_.contains(target.options.event, 'all') &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered">          if (!_.contains(target.options.event, 'all') &amp;&amp;</span>
               !_.contains(target.options.event, status)) {
-<span class="cstat-no" title="statement not covered" >            return;</span>
+<span class="cstat-no" title="statement not covered">            return;</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          filepath = path.relative(eventCwd, filepath);</span>
+<span class="cstat-no" title="statement not covered">          filepath = path.relative(eventCwd, filepath);</span>
 &nbsp;
           // Skip empty filepaths
-<span class="cstat-no" title="statement not covered" >          if (filepath === '') {</span>
-<span class="cstat-no" title="statement not covered" >            return;</span>
+<span class="cstat-no" title="statement not covered">          if (filepath === '') {</span>
+<span class="cstat-no" title="statement not covered">            return;</span>
           }
 &nbsp;
           // If Gruntfile.js changed, reload self task
-<span class="cstat-no" title="statement not covered" >          if (target.options.reload || /gruntfile\.(js|coffee)/i.test(filepath)) {</span>
-<span class="cstat-no" title="statement not covered" >            taskrun.reload = true;</span>
+<span class="cstat-no" title="statement not covered">          if (target.options.reload || /gruntfile\.(js|coffee)/i.test(filepath)) {</span>
+<span class="cstat-no" title="statement not covered">            taskrun.reload = true;</span>
           }
 &nbsp;
           // Emit watch events if anyone is listening
-<span class="cstat-no" title="statement not covered" >          if (grunt.event.listeners('watch').length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >            grunt.event.emit('watch', status, filepath, target.name);</span>
+<span class="cstat-no" title="statement not covered">          if (grunt.event.listeners('watch').length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered">            grunt.event.emit('watch', status, filepath, target.name);</span>
           }
 &nbsp;
           // Group changed files only for display
-<span class="cstat-no" title="statement not covered" >          changedFiles[filepath] = status;</span>
+<span class="cstat-no" title="statement not covered">          changedFiles[filepath] = status;</span>
 &nbsp;
           // Add changed files to the target
-<span class="cstat-no" title="statement not covered" >          if (taskrun.targets[target.name]) {</span>
-<span class="cstat-no" title="statement not covered" >            if (!taskrun.targets[target.name].changedFiles) {</span>
-<span class="cstat-no" title="statement not covered" >              taskrun.targets[target.name].changedFiles = Object.create(null);</span>
+<span class="cstat-no" title="statement not covered">          if (taskrun.targets[target.name]) {</span>
+<span class="cstat-no" title="statement not covered">            if (!taskrun.targets[target.name].changedFiles) {</span>
+<span class="cstat-no" title="statement not covered">              taskrun.targets[target.name].changedFiles = Object.create(null);</span>
             }
-<span class="cstat-no" title="statement not covered" >            taskrun.targets[target.name].changedFiles[filepath] = status;</span>
+<span class="cstat-no" title="statement not covered">            taskrun.targets[target.name].changedFiles[filepath] = status;</span>
           }
 &nbsp;
           // Queue the target
-<span class="cstat-no" title="statement not covered" >          if (taskrun.queue.indexOf(target.name) === -1) {</span>
-<span class="cstat-no" title="statement not covered" >            taskrun.queue.push(target.name);</span>
+<span class="cstat-no" title="statement not covered">          if (taskrun.queue.indexOf(target.name) === -1) {</span>
+<span class="cstat-no" title="statement not covered">            taskrun.queue.push(target.name);</span>
           }
 &nbsp;
           // Run the tasks
-<span class="cstat-no" title="statement not covered" >          taskrun.run();</span>
+<span class="cstat-no" title="statement not covered">          taskrun.run();</span>
         });
 &nbsp;
         // On watcher error
-<span class="cstat-no" title="statement not covered" >        this.on('error', <span class="fstat-no" title="function not covered" >function(err) {</span></span>
-<span class="cstat-no" title="statement not covered" >          if (typeof err === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >            err = new Error(err);</span>
+<span class="cstat-no" title="statement not covered">        this.on('error', <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">          if (typeof err === 'string') {</span>
+<span class="cstat-no" title="statement not covered">            err = new Error(err);</span>
           }
-<span class="cstat-no" title="statement not covered" >          grunt.log.error(err.message);</span>
+<span class="cstat-no" title="statement not covered">          grunt.log.error(err.message);</span>
         });
       }));
     });
@@ -791,10 +789,11 @@ module.exports = <span class="fstat-no" title="function not covered" >function(g
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 22:20:23 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 19:56:48 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
