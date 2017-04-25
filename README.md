@@ -1,6 +1,6 @@
 # npmtest-grunt-contrib-watch
 
-#### test coverage for  [grunt-contrib-watch (v1.0.0)](https://github.com/gruntjs/grunt-contrib-watch)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-contrib-watch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-contrib-watch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-contrib-watch.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-contrib-watch)
+#### basic test coverage for  [grunt-contrib-watch (v1.0.0)](https://github.com/gruntjs/grunt-contrib-watch)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-contrib-watch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-contrib-watch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-contrib-watch.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-contrib-watch)
 
 #### Run predefined tasks whenever watched file patterns are added, changed or deleted
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-contrib-watch/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-contrib-watch/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-grunt-contrib-watch/build/coverage.html/index.html)
 
@@ -175,7 +175,8 @@
     "scripts": {
         "test": "grunt test -v"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
